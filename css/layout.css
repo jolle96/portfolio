@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+
+      overflow-x: hidden;
+      overflow-y: auto;
+} 
+
+body {
+      background-color: #F7F7F7;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Quicksand', verdana, sans-serif;
+    font-size: 32px;
+    color: #020202;
+}
+
+h2 {
+   font-family: 'Quicksand', verdana, sans-serif;
+   font-size: 18px;
+   color: #020202;
+}
+
+h3 {
+  font-family: 'Quicksand', verdana, sans-serif;
+  font-size: 18px;
+  color: #020202;
+  margin-left: 6px;
+}
+
+p {
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 16px;
+    color: #020202;
+}
+
+p1 {
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 16px;
+    color: #020202;
+}
+
+p2 {
+   font-family: 'Lato', arial, sans-serif;
+   font-size: 16px;
+   color: #020202;
+   margin-left: 6px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../beelden/startbeeld.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+}
+
+.left-aligned {
+  position: absolute;
+  margin-left: 21vw;
+  padding-top: 60px;
+}
+
+/* NAVIGATION */
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #F7F7F7;
+  opacity: 96%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #020202;
+  display: block;
+  transition: 0.3s;
+
+  font-family: 'Quicksand', verdana, sans-serif;
+}
+
+.sidenav a:hover {
+  color: #91bafb;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 27px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 12px;}
+}
+
+.hamburger-nav {
+  font-size:32px;
+  cursor:pointer;
+  color: #F7F7F7;
+  opacity: 72%;
+  padding-left: 30px;
+}
+.hamburger-nav-about {
+  font-size:32px;
+  cursor:pointer;
+  color: #020202;
+  opacity: 72%;
+  padding-left: 30px;
+}
+
+
+.social i {
+  font-size: 27px;
+  margin-left: 1px;
+  color: #91bafb;
+}
+
+/* PHOTO GRID */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 6vw;
+  margin-bottom: 6vh;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 42vw;
+  max-width: 42vw;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50vw;
+    max-width: 50vw;
+    padding-left: 0;
+    margin-bottom: 21px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 90vw;
+    max-width: 90vw;
+    padding-left:0;
+    margin-bottom: 21px;
+  }
+}
